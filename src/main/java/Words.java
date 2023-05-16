@@ -1,14 +1,15 @@
+import java.util.Random;
+
 public class Words {
+    Random random = new Random();
+    public String [] words = {"ELEPHANT", "PIGEON", "TIGER", "BEAR"};
+    int index = random.nextInt(words.length);
 
-    private String [] words = {"ELEPHANT", "PIGEON", "TIGER", "BEAR"};
-
-    public static void main(String[] args) {
-
-
-            public static getWord(){
-
-        }
-
+    public String getWord(){
+        return words[index];
 
     }
+
+
+
 }
